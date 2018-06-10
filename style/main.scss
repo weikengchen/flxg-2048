@@ -1,9 +1,9 @@
 @import "helpers";
 @import "fonts/clear-sans.css";
 
-$field-width: 500px;
+$field-width: 750px;
 $grid-spacing: 15px;
-$grid-row-cells: 4;
+$grid-row-cells: 6;
 $tile-size: ($field-width - $grid-spacing * ($grid-row-cells + 1)) / $grid-row-cells;
 $tile-border-radius: 3px;
 
@@ -212,8 +212,8 @@ hr {
         height: 60px;
         line-height: 60px;
         margin-top: 222px;
-        // height: $field-width;
-        // line-height: $field-width;
+        height: $field-width;
+        line-height: $field-width;
       }
 
       .lower {
@@ -224,7 +224,7 @@ hr {
       a {
         @include button;
         margin-left: 9px;
-        // margin-top: 59px;
+        margin-top: 59px;
 
 	&.keep-playing-button {
 	  display: none;
@@ -321,8 +321,7 @@ hr {
     text-align: center;
     font-weight: bold;
     z-index: 10;
-
-    font-size: 55px;
+    word-break: break-all;
   }
 
   // Movement transition
@@ -476,7 +475,7 @@ hr {
   // Redefine variables for smaller screens
   $field-width: 280px;
   $grid-spacing: 10px;
-  $grid-row-cells: 4;
+  $grid-row-cells: 6;
   $tile-size: ($field-width - $grid-spacing * ($grid-row-cells + 1)) / $grid-row-cells;
   $tile-border-radius: 3px;
   $game-container-margin-top: 17px;
